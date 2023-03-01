@@ -11,22 +11,200 @@ body{
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
     margin: 0 auto;
+    background-color: hsl(221, 100%, 96%);
 }
 main.card{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         'result-area summary-area';
-    box-shadow: 0 0 10px #000;
-    padding: 2rem;
+    box-shadow: 0 0 20px hsl(252, 88%, 90%);
     border-radius: 1.5rem;
+    background-color: #fff;
 }
 result-area{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     display: grid;
     justify-items: center;
     grid-area: result-area;
-    background-image: linear-gradient (hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 1.5rem;
 }
 summary-area{
     grid-area: summary-area;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.circle{
+    text-align: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 50%;
+}
+h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+    padding-bottom: 1.5rem;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+h2.sub{
+    color: hsl(224, 30%, 27%);
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+}
+h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+h5{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+    padding-top: 1rem;
+    text-align: center;
+    width: 200px;
+}
+h6{
+    padding-left: 0.5rem;
+}
+h6.add{
+    color: hsl(224, 30%, 27%);
+    text-align: end;
+}
+span.ch-cr{
+    color: hsl(224, 30%, 27%);
+    opacity: 0.5;
+}
+section.add{
+    display: grid;
+    row-gap: 1rem;
+    align-content: space-between;
+    height: auto;
+}
+section.first{
+    display: flex;
+}
+.Reaction{
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.Memory{
+    display: flex;
+    align-items: center;
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.Verbal{
+    display: flex;
+    align-items: center;
+    background-color: hsl(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.Visual{
+    display: flex;
+    align-items: center;
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 20px;
+    justify-content: space-between;
+}
+section.btn{
+    display: flex;
+    align-items: end;
+    height: auto;
+    padding-top: 2rem;
+}
+button{
+    background-color: hsl(224, 30%, 27%);
+    padding: 0.8rem;
+    border: none;
+    width: 220px;
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+button:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+img.icon{
+    width: 1rem;
+}
+
+@media(max-width:800px){
+    main.card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'result-area' 'summary-area';
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+        /* margin-top: -100px; */
+    }
+    result-area{
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        padding-bottom: 2rem;
+    }
+    h1{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 12PX;
+    }
+    .circle{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    h4{
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+    h5{
+        font-size: 12px;
+        width: 200px;
+        padding-top: 0.5rem;
+    }
+    
 }
