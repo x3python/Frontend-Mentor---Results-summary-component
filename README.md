@@ -9,8 +9,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/frontend-mentor-faq-accordion-card-ilwzCmeSZH
-- Live Site URL: https://x3python.github.io/Frontend-Mentor---FAQ-Accordion-Card/
+- Solution URL: https://www.frontendmentor.io/solutions/resultssummarycomponent-c08PeKIz6e
+- Live Site URL: https://x3python.github.io/Frontend-Mentor---Results-summary-component/
 
 ### Built with
 
